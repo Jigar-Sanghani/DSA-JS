@@ -4,7 +4,9 @@ const maximum = (arr) => {
 
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = arr.length - 1; j >= 0; j--) {
-            console.log(a[i][j]);
+            if (a[i] <= a[j]) {
+
+            }
         }
     }
 
