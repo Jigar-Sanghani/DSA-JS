@@ -3,29 +3,28 @@
 let arr1 = 'listen';
 let arr2 = 'silent';
 
-let str1 = arr1.split('');
-let str2 = arr2.split('');
 
-// console.log(str1);
-// console.log(str2);
+const arraymanage = (arr1, arr2) => {
 
+    let str1 = arr1.split('');
+    let str2 = arr2.split('');
+    let check = true;
 
-const arraymanage = (str1, str2) => {
-    for (let i = 0; i < str1.length; i++) {
-        for (let j = 0; j < str2.length; j++) {
-            if (str1[i] == str2[i]) {
-                return true;
-                break;
-            }
-            else {
-                return false;
+    console.log(str1.sort(), str2.sort());
+    if (str1.length == str2.length) {
+        for (let i = 0; i < str1.length; i++) {
+            if (str1[i] != str2[i]) {
+                check = false;
                 break;
             }
         }
+    } else {
+        check = false;
     }
+    return check;
 }
 
-let check = arraymanage(str1, str2);
+let check = arraymanage(arr1, arr2);
 
 console.log(check);
 
