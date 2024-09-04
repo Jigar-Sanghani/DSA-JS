@@ -6,14 +6,6 @@ const sumarray= (arr) => {
         total += arr[i];
     }
     return total;
-};
-
-for (let i = 0; i < arr.length; i++) {
-    let subarray = [];
-    for (let j = i; j < arr.length; j++) {
-        subarray.push(arr[j]);
-    }
 }
-
 
 console.log(sumarray(arr));
